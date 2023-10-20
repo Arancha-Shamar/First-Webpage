@@ -1,0 +1,159 @@
+body { /* Här ligger min body där jag valt att köra display flex samt göra hemsidan centrerad och även fixa fonten för det mesta i sidan */
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+  justify-content: center;
+  background: rgb(44, 41, 41);
+}
+
+div.wrapper { /* Här ligger storleken för min div wrapper */
+  width: 1300px;
+}
+
+.navbar { /* Här ligger min navbar som jag skappade en egen div för. Min navbar har en höjd, Bakgrund, Självklart centrerad samt en display flex. Sen finns redd och border m.m */
+  height: 100px;
+  background: #b98e4e;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+nav { /* Här ligger själva knapparna / texten till min navbar som te.x Warranty, Contact, Products, Home. Här har jag justerat storlek samt plats på texten genom att använda flexbox  */
+  width: 60%;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.logocontainer { /* Här är min logocontainer som jag har min navbar text storlek samt placering i. Jag har ändrat bredd till 40% så att den får en fin plats på navbar samt kört display flex för att ha den i mitten.*/
+  width: 40%;
+  display: flex;
+  margin: 5px;
+}
+
+.wrapper nav a { /* Här ligger min färg på navknapparna samt att jag tagit bort strecket under texten. Och kört lite margin/padding för att de ska bli snyggare.*/
+  text-decoration: none;
+  margin: 10px;
+  padding: 3px;
+  color: #0c0101;
+}
+
+.wrapper nav a:hover { /* Här ligger min hover över knappar på nav menyn. Har justerat bakgrund, färg, runda kanter m.m*/
+    background: rgb(75, 73, 73);
+    color: white;
+    border: double;
+    border-color: darkgoldenrod;
+    border-radius: 5px;
+  }
+
+div.wrapper {  /* Här ligger hela min wrapper som jag har satt en auto width på. Har även kört lite padding/margin för att justera och snygga till.*/
+  margin: 5px;
+  padding: 10px;
+  width: auto;
+}
+
+.wrapper footer { /* Här ligger min footer som jag även har bakgrundsfärgen i och kanterna på min border samt centrerat den.*/
+  display: flex;
+  justify-content: center;
+  background: #b98e4e;
+  border-radius: 25px;
+}
+
+.wrapper footer section { /* Här ligger texten till min footer. Där jag använd padding/margin för att göra finare samt valt färg och justerat plats på texten via flexbox.*/
+  padding: 5px;
+  margin: 2px;
+  flex: auto;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.wrapper footer a { /* Här ligger min högra samt vänstra text i footern. Dom ligger i en .a för att kunna bifoga länkar. Ligger även färg, Flexbox justeringar, Samt så tog jag bort strecket under.*/
+  padding: 5px;
+  margin: 2px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper footer a:hover { /* Här ligger men hover över texten i footern. Så att jag får en fin bakgrund när jag har musen över. Samt border typ och storlek.*/
+  background: rgb(80, 78, 78);
+  border-radius: 5px;
+  border-style: double;
+  border-color: darkgoldenrod;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+article { /* Här ligger min article. Då har vi bakgrundsfärgen som är samma som hemsidans. Samt lite padding/margin för att justera så det ser bättre ut och för att få plats med allt.*/
+  background: rgb(44, 41, 41);
+  margin: 75px;
+  padding: 40px;
+  width: 900px;
+  display: flex;
+}
+
+.item { /* Här ligger min item class som jag skapade för alla tröjor. Alla tröjar har samma class och när jag justerar här så justerar jag alla samtidigt så att koden inte repeterar sig själv i css.*/
+  background: rgb(230, 223, 223);
+  border: #000000;
+  border-style: double;
+  border-radius: 3%;
+  border-width: 4px;
+  box-shadow: 5px 5px 5px rgb(206, 135, 29);
+  text-align: center;
+  padding: 25px;
+  width: 2000px;
+  margin: 20px;
+}
+
+h5 { /* Här ligger min h5 som jag endast har för beskrivngen av tröjans färg/typ. Jag har kört en lägre opacity. Satt margin på 0 för att få den rakt under h1 titeln samt alignat texten till mitten. Jag tycker de ser bättre ut än att ha de på sidan */
+  opacity: 0.8;
+  margin: 0;
+  text-align: center;
+}
+
+h1 { /* Här ligger min H1 titel (Sinus Hoodie) som jag endast satt margin: 0; på för att ha den finare och få plats med h5 under.*/
+  margin: 0;
+}
+
+.wrapper main article aside img { /* Här justerar jag bilden till samtliga tröjor. Har satt padding & margin samt width här för att centrera den i ramen. Har kört en bakgrundsfärg samt rundat kanterna och även satt en liten skugga bakom för att få bilden att flyta.*/
+  width: 55%;
+  margin: 12px;
+  padding: 30px;
+  box-shadow:  5px 5px 5px #222;
+  background: rgb(214, 157, 33);
+  border: #000000;
+  border-radius: 15%;
+}
+
+.logo { /* Här har jag endast justerat logans storlek. Jag valde 180px då jag tycker att de såg bra ut.*/
+  width: 180px;
+}
+
+.wrapper main article button { /* Här har jag justerat mina knappar och satt dit en färg, border, rundat kanterna alignat till mitten, tagit bort texten under samt justerat storlek*/
+  width: 100px;
+  color: rgb(7, 0, 0);
+  background: darkgoldenrod;
+  border-radius: 10px;
+  font-size: 15px;
+  align-items: center;
+  text-decoration: none;
+  margin: 2px;
+  padding: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper main article button:hover { /* Här har jag ändrat muspekaren, Bakgrund färgen när du har musen över samt text färgen när du har musen över.*/
+  background: rgb(75, 73, 73);
+  color: white;
+  cursor: pointer;
+  border: double;
+  border-color: darkgoldenrod;
+  border-radius: 10px;
+}

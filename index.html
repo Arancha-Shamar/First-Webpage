@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinus</title>     <!-- Här är titeln till hemsidan. -->
+
+    <link rel="stylesheet" href="css/style.css" />     <!-- Här är länken till min CSS Fil. -->
+
+  </head>
+  <body>
+    <div class="wrapper">       <!-- Första diven som går genom hela koden -->
+
+      <div class="navbar"> <!-- Navbaren ligger alla knappar från övre menyn i samt loggan -->
+
+        <div class="logocontainer"> <!-- I min logocontainer ligger min logga för att enklare kunna justera i css -->
+
+          <img class="logo" src="img/sinus-logo.svg" alt="logo" /> <!-- Min logga till hemsidan -->
+        </div>
+
+        <nav>                    <!-- Nav menyn här ligger alla knappar i övre menyn samt loggan -->
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+          <a href="#">Warranty</a>
+          <a href="#"><img class="kassa" src="img/icon-bag.svg" alt="kassa"/></a> <!-- Här satte jag loggan i en a href för att kunna ha den som en länk -->
+        </nav>
+      </div>
+      <main> <!-- Här ligger min main där jag har alla mina tröjor och divs relaterade till tröjorna.  -->
+
+        <article>
+          <aside class="item"> <!-- Här skapade jag en class i min aside för mina items (tröjorna)  -->
+            <img src="img/hoodie-fire.png" alt="firehoodie" /> <!-- Här ligger bilden till röda tröjan  -->
+            <div class="itemtext">   <!-- Här och i alla andra tröjor fick dom en div med class itemtext för att kunna justera i css  -->
+              <h1>Sinus Hoodie</h1>
+              <h5>Fire</h5>
+            </div>
+            <p>Red modern hoodie that will keep you warm in the cold.</p>
+            <button type="button">Buy</button>        <!-- Här är min knapp för "buy" vilket även finns i alla andra tröjor  -->
+          </aside>
+
+          <aside class="item">
+            <img src="img/hoodie-ash.png" alt="ash" /> <!-- Här ligger bilden till svarta tröjan  -->
+            <div class="itemtext">
+              <h1>Sinus Hoodie</h1>
+              <h5>Ash</h5>
+            </div>
+            <p>Black modern hoodie that will keep you warm in the cold.</p>
+            <button type="button">Buy</button>
+          </aside>
+
+          <aside class="item">
+            <img src="img/hoodie-ocean.png" alt="water" /> <!-- Här ligger bilden till blåa tröjan  -->
+            <div class="itemtext">
+              <h1>Sinus Hoodie</h1>
+              <h5>Ocean</h5>
+            </div>
+            <p>Blue modern hoodie that will keep you warm in the cold.</p>
+            <button type="button">Buy</button>
+          </aside>
+        </article>
+      </main>
+      <footer>
+        <section>
+          <h2>Menu</h2> <!-- Här är en section för vänstra texten i footern med fake länkar i "#"  -->
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+          <a href="#">Warranty</a>
+        </section>
+
+        <section> <!-- Här är en sektion för mitten delen av footern som även är skriven i .p istället för .a då den inte behöver länka till något  -->
+          <h2>Our location</h2>
+          <p>Sinus Skateboards</p>
+          <p>Railsvägen 13</p>
+          <p>113 37, Rampnäs</p>
+        </section>
+
+        <section> <!-- Här är en sektion för högra texten i footern med fake länkar "#"  -->
+          <h2>Social Media</h2>
+          <a href="https://github.com/Arancha-Shamar">Github</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </section> <!-- Här avslutar jag en section för footern. Alla sectioner har en egen avslutning -->
+      </footer> <!-- Här avslutar jag footern. -->
+    </div> <!-- Här avslutar jag wrapper diven -->
+  </body> <!-- Här avslutar jag body -->
+</html> <!-- Här avslutas hela HTML koden -->
